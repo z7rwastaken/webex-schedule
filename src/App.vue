@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Homepage/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Homepage from "./views/Homepage"
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { Homepage }
 }
 </script>
 
@@ -22,7 +18,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.title {
+  color: #7289DA;
+}
+
+* {
+  background-color: #2C2F33;
+
+  padding: 0;
+  margin: 0;
 }
 </style>
